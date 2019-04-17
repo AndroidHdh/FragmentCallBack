@@ -1,0 +1,4 @@
+# FragmentCallBack（思想来源动脑学院）
+一个便捷的Activity和Fragment通信框架
+本框架采用接口的方式来实现Activity和Fragment之间的通信
+所有的回调接口不再在Activity和Frgment中注册实现，而是在FunctionManager这个管理类中实现接口的注册和实现
