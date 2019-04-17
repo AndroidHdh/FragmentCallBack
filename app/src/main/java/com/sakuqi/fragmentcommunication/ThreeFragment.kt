@@ -36,7 +36,7 @@ class ThreeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_one, container, false)
 
         //Find the +1 button
-        mPlusOneButton = view.findViewById<Button>(R.id.button)
+        mPlusOneButton = view.findViewById(R.id.button)
         mPlusOneButton?.setOnClickListener {
             val string = FunctionManager.getInstance().invokeFun(TAG,"Three",String::class.java)
             Toast.makeText(context,"two == 有参数有返回 返回值= $string", Toast.LENGTH_LONG).show()

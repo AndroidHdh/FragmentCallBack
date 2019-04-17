@@ -36,7 +36,7 @@ class OneFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_one, container, false)
 
         //Find the +1 button
-        mPlusOneButton = view.findViewById<Button>(R.id.button)
+        mPlusOneButton = view.findViewById(R.id.button)
         mPlusOneButton?.setOnClickListener {
             FunctionManager.getInstance().invokeFunc(TAG)
         }
